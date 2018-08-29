@@ -1,5 +1,4 @@
-<?php 
-$page_title = 'Welcome to BRP';
+<?php $page_title = 'Welcome to BRP';
 include ('assets/html/header.html');
 ?>
 
