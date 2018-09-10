@@ -595,6 +595,7 @@ img {
     color: white;
     text-transform: uppercase;
     text-align: center;
+    display: flex;
 }
 
 #hero-header {
@@ -605,6 +606,27 @@ img {
     font-size: 2em;
     letter-spacing: 4px;
 }
+
+.hero-row_buttons {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+}
+
+.btn-patient {
+    margin: auto 25px;
+}
+
+.btn-physician {
+    padding: auto 25px;
+}
+
+
+/* .hero-header_center {
+    position: absolute;
+    left: 0;
+    top: 50%;
+} */
 
 
 /*  =============================== */
@@ -617,9 +639,131 @@ img {
 
 #link-cards {
     padding: 100px 20px;
+    background: #E0E0E0;
+    box-shadow: inset 0px 6px 10px rgba(0, 0, 0, 0.25);
 }
 
 .card-image {
-    max-height: 271px;
-    width: 419px;
+    height: auto;
+    width: auto;
+}
+
+.link-button {
+    position: absolute;
+    bottom: 15%;
+    left: 33%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: 400;
+}
+
+
+/*  =============================== */
+
+
+/*  =========== ABOUT US ======== */
+
+
+/*  =============================== */
+
+#about-us_home {
+    padding: 50px 0;
+}
+
+
+/*  =============================== */
+
+
+/*  =========== NEWS EVENTS ======== */
+
+
+/*  =============================== */
+
+#news-events {
+    padding: 50px 0;
+    background: #E0E0E0;
+    box-shadow: inset 0px 6px 10px rgba(0, 0, 0, 0.25);
+    height: auto;
+}
+
+.news-events_row-news {
+    margin-bottom: 25px;
+}
+
+.card_news-events {
+    width: 19rem;
+    height: auto;
+    margin: 0 auto;
+    margin-right: 20px;
+    color: white;
+}
+
+.card-body_news {
+    background-color: #3687E5;
+    font-size: 16px;
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+.card-link:link,
+.card-link:visited {
+    color: #ffffff;
+}
+
+.card-text {
+    color: black;
+}
+
+.card-header {
+    background-color: #0F0D5E;
+    font-size: 1.25rem;
+}
+
+.link-text {
+    font-size: 1.25rem;
+}
+
+.link-text:link,
+.link-text:visited {
+    color: #004595;
+}
+
+
+/*  =============================== */
+
+
+/*  =========== FOOTER ======== */
+
+
+/*  =============================== */
+
+footer {
+    height: 150px;
+    padding: 25px 0 5px 0;
+    background: #0F0D5E;
+    color: #fff;
+}
+
+.facebook {
+    font-size: 2rem;
+}
+
+.fa.fa-facebook {
+    color: #fff;
+}
+
+.badge.social.facebook:hover {
+    background-color: #3B5998;
+}
+
+.linkedin {
+    font-size: 2rem;
+}
+
+.fa.fa-linkedin {
+    color: #fff;
+}
+
+.badge.social.linkedin:hover {
+    background-color: #0077B5;
 }
