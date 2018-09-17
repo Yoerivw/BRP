@@ -3,34 +3,24 @@
 <!--  HERO SECTION -->
 <!-- ============  -->
 <section id="hero">
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12">
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center hero-row_content">
+            <div class="col-12 ">
                 <h1 id="hero-header">Bergman Ross and partners <br><span id="hero-header_big">radiologists</span></h1>
             </div>
-            <!-- End Div -->
-        </div>
-        <!-- end row -->
-
-
-        <div class="row justify-content-center align-items-center hero-row_buttons">
-            <div class="col-6">
-                <button class="btn btn-primary btn-lg btn-patient">Patient Portal</button>
+            <!-- End col -->
+            <div class="row hero-row_buttons">
+            <div class="col-12 col-md-6 col-lg-6">
+                <button class="btn  btn-primary btn-lg hero-button_patient btn-hero">Patient Portal</button>
             </div>
             <!-- end col -->
-            <div class="col-6">
-                <button class="btn btn-primary btn-lg btn-physician">Physician Portal</button>
-            </div>
-
-
+            <div class="col-12 col-md-6 col-lg-6">
+                <button class="btn  btn-primary btn-lg hero-button_physician btn-hero">Physician Portal</button>
+            </div><!-- end col -->
+        </div><!-- end row -->
 
         </div>
         <!-- end row -->
-
-
-
-
-
     </div>
     <!-- end container -->
 

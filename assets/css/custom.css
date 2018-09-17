@@ -537,26 +537,26 @@ img {
 }
 
 .nav {
-    font-weight: 400;
+    font-weight: 300;
     position: absolute;
-    font-size: 20px;
+    font-size: 18px;
     Line-height: 23px;
     text-align: center;
-    letter-spacing: 2px;
     color: white;
     bottom: 0;
     left: 0;
     width: 100%;
     margin: 0 2px;
     padding: 0;
-    display: flex;
-    justify-content: space-around;
 }
 
 .nav>.nav-item {
     width: 16.667%;
     font-family: 'Roboto', sans-serif;
     background-color: #0F0D5E;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .nav>.nav-item>.nav-link {
@@ -579,10 +579,123 @@ img {
     background-color: #FF7629;
     position: absolute;
     padding: 10px 10px;
-    left: 50%;
+    left: 40%;
     top: 40%;
     margin-left: -150px;
-    margin-top: -25px;
+    margin-top: -40px;
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+#search {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+#search-form>.badge.social.facebook>.fa.fa-facebook,
+#search-form>.badge.social.linkedin>.fa.fa-linkedin {
+    color: #0F0D5E;
+}
+
+#search-form>.badge.social.facebook>.fa.fa-facebook:hover,
+#search-form>.badge.social.linkedin>.fa.fa-linkedin:hover {
+    transform: scale(1.2);
+}
+
+#search-form>.badge.social.facebook:hover,
+#search-form>.badge.social.linkedin:hover {
+    background-color: #ffff;
+}
+
+.mobile-menu_button {
+    background-color: #0F0D5E;
+}
+
+#nav>.mobile-only {
+    display: none;
+}
+
+#button-holder {
+    background-color: none;
+    border-top: none;
+    box-shadow: none;
+    cursor: pointer;
+    float: left;
+    height: 38px;
+    margin: 11px 5px 0 5px;
+    text-align: center;
+    width: 50px;
+}
+
+#button-holder img {
+    margin-left: 4px;
+    width: 20px;
+}
+
+.mobile-only_phone {
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    font-size: 13px;
+}
+
+#top-nav {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 75px;
+    background-color: white;
+}
+
+#book_button-mobile {
+    background-color: #FF7629;
+    position: absolute;
+    padding: 10px 10px;
+    left: 36%;
+    top: 88%;
+    margin-left: 0px;
+    margin-top: 0px;
+    font-weight: 200;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+#navbar-brand_mobile {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 60%;
+    left: 2%;
+}
+
+@media only screen and (min-width: 992px) {
+    #nav>.desktop-only {
+        display: block;
+    }
+    #nav>.mobile-only {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #nav>.mobile-only {
+        display: block;
+    }
+    #nav>.desktop-only {
+        display: none;
+    }
+    .mobile-menu_button {
+        bottom: 0%;
+        position: absolute;
+    }
 }
 
 
@@ -598,6 +711,14 @@ img {
     display: flex;
 }
 
+.hero-row_content {
+    margin-top: 15%;
+}
+
+.hero-row_buttons {
+    margin-top: 10%;
+}
+
 #hero-header {
     margin-top: 50px;
 }
@@ -607,26 +728,11 @@ img {
     letter-spacing: 4px;
 }
 
-.hero-row_buttons {
-    position: absolute;
-    bottom: 5%;
-    left: 40%;
+.btn-hero {
+    font-size: 2.3em;
+    font-weight: 200;
+    text-transform: uppercase;
 }
-
-.btn-patient {
-    margin: auto 25px;
-}
-
-.btn-physician {
-    padding: auto 25px;
-}
-
-
-/* .hero-header_center {
-    position: absolute;
-    left: 0;
-    top: 50%;
-} */
 
 
 /*  =============================== */
@@ -766,4 +872,38 @@ footer {
 
 .badge.social.linkedin:hover {
     background-color: #0077B5;
+}
+
+
+/* ABOUT US PAGE */
+
+
+/* #about-us_container {
+    margin: 0;
+    width: auto;
+}
+ */
+
+#about-us {
+    padding: 50px 15px;
+}
+
+.radiologist_gallery {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-us_sidebar-list {
+    list-style: none;
+    padding: 5px;
+}
+
+h3.lead {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.about-us_title {
+    font-weight: 300;
+    font-size: 40px;
 }

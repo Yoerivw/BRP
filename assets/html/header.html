@@ -25,7 +25,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -38,19 +38,78 @@
 
     <!-- Header -->
     <header class="site-header" role="banner">
-
         <!-- Navbar -->
-
         <div class="navbar-wrapper">
             <nav class="navbar navbar-expand-lg fixed-top">
-                <div id="nav" class="container">
+                <div id="nav" class="container-fluid">
 
-                    <a class="navbar-brand" href="/"><img class="logo" src="assets/img/brp_logo.png" alt="Bergman Ross and partners logo"></a>
 
-                    <button type="button" id="book_button" class="btn btn-danger">Book Your Appointment</button>
+                    <div class="desktop-only">
 
-                    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">MENU</span>
+                        <a class="navbar-brand" href="/"><img class="logo" src="assets/img/brp_logo.png" alt="Bergman Ross and partners logo"></a>
+
+                        <button type="button" id="book_button" class="btn btn-danger">Book Appointment</button>
+
+
+                        <div id="search">
+                            <form id="search-form" class="form-inline my-2 my-lg-0 form--search">
+
+                                <a href="/" target="_blank" class="badge social facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="/" target="_blank" class="badge social linkedin"><i class="fa fa-linkedin"></i></a>
+
+
+
+                                <input id="search-text-input" class="form-control form-inline" type="search" placeholder="Search" aria-label="Search">
+                                <div id="button-holder">
+                                    <img src="https://cdn.rawgit.com/marcobiedermann/playground/master/ui/search/simple-search-bar/dist/assets/images/magnifier.svg" alt="">
+                                </div>
+
+
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="mobile-only">
+                        <div id="top-nav" class="container-fluid">
+                            <h3 class="mobile-only_phone">
+                                <a href="#" class="">
+                                                    021 595 13710
+                                                </a>
+                            </h3>
+
+                            <a id="navbar-brand_mobile" class="navbar-brand" href="/"><img class="logo" src="assets/img/brp_logo.png" alt="Bergman Ross and partners logo"></a>
+
+                            <button type="button" id="book_button-mobile" class="btn btn-danger">Book Appointment</button>
+
+                            <div id="search">
+                                <form id="search-form" class="form-inline">
+
+                                    <a href="/" target="_blank" class="badge social facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="/" target="_blank" class="badge social linkedin"><i class="fa fa-linkedin"></i></a>
+
+
+
+                                    <input id="search-text-input" class="" type="search" placeholder="Search" aria-label="Search">
+                                    <div id="button-holder">
+                                        <a href="#"><img src="https://cdn.rawgit.com/marcobiedermann/playground/master/ui/search/simple-search-bar/dist/assets/images/magnifier.svg" alt=""></a>
+                                    </div>
+
+
+
+                                </form>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+
+
+                    <button class="navbar-toggler mobile-menu_button btn-block" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon ">MENU</span>
                       </button>
 
 
@@ -60,7 +119,7 @@
                             <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
                             <li class="nav-item"><a class="nav-link" href="services.php">Services</a></li>
                             <li class="nav-item"><a class="nav-link" href="branches.php">Branches</a></li>
-                            <li class="nav-item"><a class="nav-link" href="news-and-events.php">News And Events</a></li>
+                            <li class="nav-item"><a class="nav-link" href="news-and-events.php">News &amp; Events</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
                     </div>
 
