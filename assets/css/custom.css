@@ -471,12 +471,12 @@ p.lead {
 
 a:link,
 a:visited {
-    color: #dd5638;
+    color: #0F0D5E;
 }
 
 a:hover {
     text-decoration: none;
-    color: #c9302c;
+    color: #3687E5;
 }
 
 button,
@@ -515,6 +515,11 @@ img {
     max-width: 100%;
 }
 
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 
 /* HEADER STYLE SECTION */
 
@@ -551,12 +556,17 @@ img {
 }
 
 .nav>.nav-item {
-    width: 16.667%;
+    width: 16.66666%;
     font-family: 'Roboto', sans-serif;
     background-color: #0F0D5E;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 14px;
+}
+
+.nav>.nav-item:hover,
+.nav>.nav-item:active {
+    background-color: #3687E5;
 }
 
 .nav>.nav-item>.nav-link {
@@ -674,28 +684,6 @@ img {
     margin: 0;
     top: 60%;
     left: 2%;
-}
-
-@media only screen and (min-width: 992px) {
-    #nav>.desktop-only {
-        display: block;
-    }
-    #nav>.mobile-only {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    #nav>.mobile-only {
-        display: block;
-    }
-    #nav>.desktop-only {
-        display: none;
-    }
-    .mobile-menu_button {
-        bottom: 0%;
-        position: absolute;
-    }
 }
 
 
@@ -844,7 +832,7 @@ img {
 /*  =============================== */
 
 footer {
-    height: 150px;
+    min-height: 150px;
     padding: 25px 0 5px 0;
     background: #0F0D5E;
     color: #fff;
@@ -875,7 +863,7 @@ footer {
 }
 
 
-/* ABOUT US PAGE */
+/* ABOUT US PAGES */
 
 
 /* #about-us_container {
@@ -884,7 +872,7 @@ footer {
 }
  */
 
-#about-us {
+#about-us_our-radiologist {
     padding: 50px 15px;
 }
 
@@ -893,9 +881,20 @@ footer {
     margin-top: 2rem;
 }
 
+div.about-us_sidebar {
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 .about-us_sidebar-list {
     list-style: none;
     padding: 5px;
+    position: fixed;
+}
+
+li.sidebar-list_item {
+    font-size: 0.9rem;
+    line-height: 3rem;
 }
 
 h3.lead {
@@ -907,3 +906,236 @@ h3.lead {
     font-weight: 300;
     font-size: 40px;
 }
+
+section#about-us_our-story {
+    padding: 30px 15px;
+}
+
+p.our-story_p {
+    font-size: 18px;
+    text-align: left;
+}
+
+img.our-story_img {
+    height: 300px;
+}
+
+
+/* BRANCHES */
+
+section#branches {
+    background-color: #EEEEEE;
+    padding: 50px 0 50px 0;
+    min-height: 600px;
+}
+
+h1.branches-header {
+    padding-left: 2.2rem;
+}
+
+#form-queries {
+    background-color: #fff;
+    border: 1px solid #C2C2C2;
+}
+
+h3.procedures-menu_header {
+    padding-left: 2.2rem;
+}
+
+ul.procedures-menu_list {
+    list-style: none;
+}
+
+li.procedures-menu_list-item {
+    line-height: 2rem;
+}
+
+
+/* ============ CONTACT PAGE =========== */
+
+#contact-us {
+    color: #0F0D5E;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#contact-us h1 {
+    padding-top: 50px;
+}
+
+#contact-us a {
+    color: #0F0D5E;
+}
+
+ul.contactus-branch_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.branch_list-item {
+    line-height: 2rem;
+}
+
+
+/* ============ SERVICES ============ */
+
+#services {
+    color: #0F0D5E;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #E5E5E5;
+}
+
+#services h4 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+ul.ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2rem;
+}
+
+#sidebar-info {
+    background-color: #EEEEEE;
+    padding-top: 20px;
+}
+
+#headingOne,
+#headingTwo,
+#headingThree {
+    background-color: #3687E5;
+}
+
+
+/* ============== MEDIA QUERIES ========= */
+
+@media only screen and (min-width: 992px) {
+    #nav>.desktop-only {
+        display: block;
+    }
+    #nav>.mobile-only {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #nav>.mobile-only {
+        display: block;
+    }
+    #nav>.desktop-only {
+        display: none;
+    }
+    .mobile-menu_button {
+        bottom: 0%;
+        position: absolute;
+    }
+}
+
+
+/* SCREENS BIGGER THAN 1200PX WIDE */
+
+@media only screen and (min-width: 1200px) {
+    div.event-card {
+        margin: auto;
+        width: 20rem;
+    }
+    h2.news-events_header {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .offset-sm-3 {
+        margin-left: 0;
+    }
+}
+
+
+/* SCREENS BETWEEN 1200PX AND 992PX wide */
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .offset-sm-3 {
+        margin-left: 0;
+    }
+}
+
+
+/* SCREENS BETWEEN 992PX AND 768PX wide */
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+    h1#hero-header {
+        font-size: 2rem;
+    }
+    button.btn-hero {
+        font-size: 2em;
+        display: block;
+        width: 100%;
+    }
+    a.link-button {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        left: 25%;
+    }
+    #link-cards {
+        padding: 25px 20px;
+    }
+    #aboutus_header {
+        text-align: center;
+    }
+    h2.news-events_header {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    div.news-card {
+        width: 16rem;
+    }
+    a.link-text {
+        font-size: 1rem;
+    }
+    div.event-card {
+        margin: 0 20px;
+        width: 15rem;
+    }
+    .offset-md-1 {
+        margin-left: 0;
+    }
+    .offset-sm-3 {
+        margin-left: 0;
+    }
+}
+
+
+/* SCREENS BETWEEN 768PX AND 576PX wide */
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+    h1#hero-header {
+        font-size: 1.8rem;
+    }
+    button.btn-hero {
+        font-size: 1.5em;
+        display: block;
+        width: 100%;
+    }
+    a.link-button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        left: 20%;
+    }
+    #link-cards {
+        padding: 25px 20px;
+    }
+    #aboutus_header {
+        text-align: center;
+    }
+    h2.news-events_header {
+        padding-top: 20px;
+    }
+}
+
+
+/* SCREENS smaller than 576 wide */
+
+@media only screen and (max-width: 576px) {}

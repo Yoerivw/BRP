@@ -3,20 +3,20 @@ include ('assets/html/header.html');
 ?>
 
 
-<section id="about-us">
-    <div class="container-fluid" id="about-us_container">
+<section id="about-us_our-radiologist">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 about-us_sidebar">
+            <div class="col-md-3 col-lg-3 about-us_sidebar">
                 <h3 class="lead">About Us</h3>
                 <ul class="about-us_sidebar-list">
-                    <a href="#" class=""><li class="sidebar-list_item">Our Story</li></a>
+                    <a href="about-os.php" class=""><li class="sidebar-list_item">Our Story</li></a>
                     <a href="#" class=""><li class="sidebar-list_item">Our Radiologists</li></a>
                     <a href="#" class=""><li class="sidebar-list_item">Locations</li></a>
                     <a href="#" class=""><li class="sidebar-list_item">On-Site Occupational Health</li></a>
                 </ul>
             </div><!-- end col-3 -->
 
-            <div class="col-md-9">
+            <div class="col-md-9 col-lg-9">
                 <h1 class="about-us_title">Our Radiologists</h1>
                 <h3 class="lead">All of our radiologists are certified and frequently attend workshops to further update and refine their specialties</h3>
 
